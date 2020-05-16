@@ -1,0 +1,4 @@
+# Example Usage for json file
+resource "bigip_as3"  "as3_bigip" {
+       as3_json = "${file("bigip.json")}"
+ }
