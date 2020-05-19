@@ -1,3 +1,19 @@
+# provider "bigip" {
+#   address  = var.specs[terraform.workspace].[azurerm_public_ip.pip.0.ip_address]
+#   username = var.uname
+#   password = var.specs[terraform.workspace].[random_password.dpasswrd.result]
+# }
+# provider "bigip" {
+#   address  = var.specs[terraform.workspace].azurerm_public_ip.pip.0.ip_address
+#   username = var.uname
+#   password = var.specs[terraform.workspace].random_password.dpasswrd.result
+# }
+# provider "bigip" {
+#   address  = "70.37.110.17"
+#   username = "admin"
+#   password = "BRu4moLy%H33"
+# }
+
 terraform {
   required_version = "> 0.12.0"
 }
