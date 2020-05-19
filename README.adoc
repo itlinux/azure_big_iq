@@ -29,11 +29,6 @@ This plan is split with every topic
 Pretty much all options are in variables.
 
 
-=== NOTICE: Sometimes the output does not show the PublicIP, if that's the case use the following command
-
-----
-terraform refresh  -state=statefilelocation
-----
 
 IMPORTANT: License Agreement with Microsoft Azure Market
 
