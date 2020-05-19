@@ -1,6 +1,4 @@
-= Azure Terraform Deploying BIG-IP with 3 nics
-
-If you need the single NIC version of BIG-IP go here: https://github.com/itlinux/azure_big_ip
+= Azure Terraform Deploying BIG-IQ with 3 nics
 
 
 == Requirements
@@ -16,7 +14,7 @@ For reference check the link below
 This plan is split with every topic
 
 * firewall
-* BIG-IP
+* BIGIQ
 * output
 * main
 * networks
@@ -26,6 +24,7 @@ This plan is split with every topic
 * storage
 * variables
 * terraform.tfvars
+* post_pass
 
 Pretty much all options are in variables.
 
@@ -128,15 +127,15 @@ Changes the terraform.tfvars to set to your name and IP subnet/network you want 
 
 Set the Plan output
 ----
-terraform plan -out=tfplan_bigip
+terraform plan -out=tfplan_bigiq
 ----
 
 Execute the Plan
 ----
-terraform apply tfplan_bigip
+terraform apply tfplan_bigiq
 ----
 
-== Connecting to BIG-IP
+== Connecting to BIG-IQ
 ----
 ssh admin@bigipublicipaddress
 ----
@@ -152,5 +151,4 @@ https://IPADRESS
 
 DONE!!
 
-== TO DO
-license the BIG-IP, set a testing for BIG-IP. This terraform will just deploy it, for now.
+LOGIN to set your BIG-IQ License
