@@ -27,8 +27,6 @@ variable "bigiq_user" {
 }
 
 variable "bigiq_pass" {
-  default = "F5R0cks"
-
 }
 
 variable "specs" {
@@ -36,15 +34,15 @@ variable "specs" {
     default = {
       location      = "westus2"
       name_rg       = "remo_bigip_rg"
-      instance_type = "Standard_DS3_v2"
-      environment   = "This env is using BIG-IP"
+      instance_type = "Standard_DS4_v2"
+      environment   = "This env is using BIG-IQ"
       owner         = "Remo Mattei"
-      f5version     = "15.1.002000"
-      plan_name     = "f5-big-ltm-1slot-byol"
-      offer         = "f5-big-ip-byol"
-      product       = "f5-big-ip-byol"
+      f5version     = "7.1.000000"
+      plan_name     = "f5-bigiq-virtual-edition-byol"
+      offer         = "f5-big-iq"
+      product       = "f5-big-iq"
       publisher     = "f5-networks"
-      sku           = "f5-big-ltm-1slot-byol"
+      sku           = "f5-bigiq-virtual-edition-byol"
       storage_type  = "Premium_LRS"
       virtualnet    = ["10.0.0.0/16"]
       trust         = ["10.0.10.0/24"]
@@ -55,15 +53,15 @@ variable "specs" {
     europe = {
       location      = "westeurope"
       name_rg       = "westeurope_rg"
-      instance_type = "Standard_DS3_v2"
-      environment   = "This env is using BIG-IP"
+      instance_type = "Standard_DS4_v2"
+      environment   = "This env is using BIG-IQ"
       owner         = "Remo Mattei"
-      f5version     = "14.1.203001"
-      plan_name     = "f5-big-ltm-1slot-byol"
-      offer         = "f5-big-ip-byol"
-      product       = "f5-big-ip-byol"
+      f5version     = "7.1.000000"
+      plan_name     = "f5-bigiq-virtual-edition-byol"
+      offer         = "f5-big-iq"
+      product       = "f5-big-iq"
       publisher     = "f5-networks"
-      sku           = "f5-big-ltm-1slot-byol"
+      sku           = "f5-bigiq-virtual-edition-byol"
       storage_type  = "Premium_LRS"
       virtualnet    = ["10.0.0.0/16"]
       trust         = ["10.0.40.0/24"]
@@ -75,14 +73,14 @@ variable "specs" {
       location      = "westus"
       name_rg       = "westus_rg"
       instance_type = "Standard_DS4_v2"
-      environment   = "This env is using BIG-IP"
+      environment   = "This env is using BIG-IQ"
       owner         = "Remo Mattei"
-      f5version     = "14.1.203001"
-      plan_name     = "f5-big-ltm-1slot-byol"
-      offer         = "f5-big-ip-byol"
-      product       = "f5-big-ip-byol"
+      f5version     = "7.1.000000"
+      plan_name     = "f5-bigiq-virtual-edition-byol"
+      offer         = "f5-big-iq"
+      product       = "f5-big-iq"
       publisher     = "f5-networks"
-      sku           = "f5-big-ltm-1slot-byol"
+      sku           = "f5-bigiq-virtual-edition-byol"
       storage_type  = "Premium_LRS"
       virtualnet    = ["10.0.0.0/8"]
       trust         = ["10.1.0.0/24"]
@@ -93,8 +91,8 @@ variable "specs" {
     central = {
       location      = "southcentralus"
       name_rg       = "big_iq_centralus_rg"
-      instance_type = "Standard_DS3_v2"
-      environment   = "This env is using BIG-IP"
+      instance_type = "Standard_DS4_v2"
+      environment   = "This env is using BIG-IQ"
       owner         = "Remo Mattei"
       f5version     = "7.1.000000"
       plan_name     = "f5-bigiq-virtual-edition-byol"
@@ -110,7 +108,4 @@ variable "specs" {
       comp_name     = "mybigiq"
     }
   }
-}
-variable "banner" {
-  default = " 8888888888 888888888    F5 BOX   888888b    d88888b Y88b   d88P "
 }

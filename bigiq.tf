@@ -40,8 +40,8 @@ resource "azurerm_linux_virtual_machine" "virtualmachine" {
   }
 
   #SSH key push into the VM
-  admin_ssh_key {
-    username   = var.uname
-    public_key = file(var.public_key)
-  }
+  # admin_ssh_key {
+  #   username   = var.uname
+  #   public_key = file(var.public_key)
+  # }
 }

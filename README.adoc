@@ -33,12 +33,12 @@ Pretty much all options are in variables.
 IMPORTANT: License Agreement with Microsoft Azure Market
 
 == License steps
-For the BYOL in Azure to be able to use BIG-IP you much accept the term before you can deploy the BIG-IP / BIG-IQ.
-Here is the working solution for the BIG-IP.
+For the BYOL in Azure to be able to use BIG-IQ you much accept the term before you can deploy the BIG-IP / BIG-IQ.
+Here is the working solution for the BIG-IQ.
 
 ** 1  => install the az CLI +
 ** 2  => login into Microsoft Azure cloud from the CLI +
-** 3  => select or set the right account which you want to use to deploy the BIG-IP +
+** 3  => select or set the right account which you want to use to deploy the BIG-IQ +
 ** 4  => create the RBAC for your subscription
 
 STEPS:
@@ -107,7 +107,7 @@ az account set -s "${SUBSCRIPTION}"
 
 Run the RBAC command
 ----
-az vm image terms accept --plan "f5-bigiq-virtual-edition-byol" --offer "f5-big-ip-best" --publisher "f5-networks"
+az vm image terms accept --plan "f5-bigiq-virtual-edition-byol" --offer "f5-big-iq-best" --publisher "f5-networks"
 ----
 
 Changes the terraform.tfvars to set to your name and IP subnet/network you want to use and what resource name. In mine it shows like this:
