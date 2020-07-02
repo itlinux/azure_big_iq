@@ -19,7 +19,6 @@ This plan is split with every topic
 * main
 * networks
 * nics
-* banner
 * dpasswd
 * storage
 * variables
