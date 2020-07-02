@@ -1,7 +1,9 @@
 variable "azurerm_instances" {
+  default = "1"
 }
 
 variable "uname" {
+  default = "remo"
 }
 
 variable "public_key" {
@@ -9,9 +11,11 @@ variable "public_key" {
 }
 
 variable "prefix" {
+  default = "remo"
 }
 
 variable "network_name" {
+  default = "bigiq_network"
 
 }
 variable "static_ip" {
