@@ -22,17 +22,6 @@ variable "static_ip" {
   default = ["10.0.10.4", "10.0.20.4", "10.0.30.5"]
 }
 
-variable "bigiq_ipaddress" {
-  default = "52.151.30.188"
-}
-
-variable "bigiq_user" {
-  default = "admin"
-}
-
-variable "bigiq_pass" {
-}
-
 variable "specs" {
   default = {
     default = {
