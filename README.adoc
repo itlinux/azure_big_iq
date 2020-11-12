@@ -129,12 +129,6 @@ Execute the Plan
 terraform apply tfplan_bigiq
 ----
 
-== Connecting to BIG-IQ
-----
-ssh admin@bigipublicipaddress
-----
-
-
 == Password ADMIN has been generated
 The TF output will have the password which was generated for the admin user
 
