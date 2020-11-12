@@ -38,10 +38,4 @@ resource "azurerm_linux_virtual_machine" "virtualmachine" {
     storage_account_type = var.specs[terraform.workspace]["storage_type"]
     caching              = "ReadWrite"
   }
-
-  #SSH key push into the VM
-  # admin_ssh_key {
-  #   username   = var.uname
-  #   public_key = file(var.public_key)
-  # }
 }

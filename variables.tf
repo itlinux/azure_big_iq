@@ -6,10 +6,6 @@ variable "uname" {
   default = "remo"
 }
 
-variable "public_key" {
-  default = "~/.ssh/openstack.pub"
-}
-
 variable "prefix" {
   default = "remo"
 }
@@ -26,8 +22,8 @@ variable "specs" {
   default = {
     default = {
       location      = "westus2"
-      name_rg       = "remo_bigip_rg"
-      instance_type = "Standard_DS4_v2"
+      name_rg       = "demo_bigiq_rg"
+      instance_type = "Standard_DS5_v2"
       environment   = "This env is using BIG-IQ"
       owner         = "Remo Mattei"
       f5version     = "7.1.000000"
@@ -41,7 +37,7 @@ variable "specs" {
       trust         = ["10.0.10.0/24"]
       untrust       = ["10.0.20.0/24"]
       mgmt          = ["10.0.30.0/24"]
-      comp_name     = "mybigip"
+      comp_name     = "mybigiq"
     }
     europe = {
       location      = "westeurope"
